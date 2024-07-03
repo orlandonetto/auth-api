@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Validação de conta</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+      }
+      h1 {
+        color: #0077b5;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0077b5;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Validação de conta</h1>
+    <p>Olá, {{name}}</p>
+    <p>
+      Obrigado por criar uma conta em nosso serviço. Para validá-la, utilize o
+      código abaixo:
+    </p>
+    <h2>Código de validação: <strong>{{code}}</strong></h2>
+    <p>Atenciosamente,</p>
+    <p>Equipe de suporte</p>
+    <p><a class="btn" href="#">Visite nosso site</a></p>
+  </body>
+</html>

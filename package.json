@@ -1,5 +1,5 @@
 {
-  "name": "zextify-api-sso",
+  "name": "auth-api",
   "version": "1.0.0",
   "description": "system for authentication (sso)",
   "main": "server.js",
@@ -9,25 +9,27 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "test": "jest --detectOpenHandles --runInBand",
-    "build": "docker build -t zextify-api-sso . && docker tag zextify-api-sso gcr.io/zextify-dev/zextify-api-sso && docker push gcr.io/zextify-dev/zextify-api-sso",
-    "deploy": "gcloud run deploy zextify-api-sso --image gcr.io/zextify-dev/zextify-api-sso --platform managed --port 5000 --allow-unauthenticated --region southamerica-east1",
-    "deploy:functions": "gcloud functions deploy zextify-api-sso --trigger-http --runtime nodejs18 --allow-unauthenticated --region southamerica-east1 --memory 128MB --max-instances 1 --timeout 30s"
+    "build": "docker build -t auth-api . && docker tag auth-api gcr.io/netto-dev/auth-api && docker push gcr.io/netto-dev/auth-api",
+    "deploy": "gcloud run deploy auth-api --image gcr.io/netto-dev/auth-api --platform managed --port 5000 --allow-unauthenticated --region southamerica-east1",
+    "deploy:functions": "gcloud functions deploy auth-api --trigger-http --runtime nodejs18 --allow-unauthenticated --region southamerica-east1 --memory 128MB --max-instances 1 --timeout 30s"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zextify/zextify-api-sso.git"
+    "url": "git+https://github.com/orlandonetto/auth-api.git"
   },
   "keywords": [
-    "zextify",
     "sso",
-    "auth"
+    "auth",
+    "api",
+    "node",
+    "authentication"
   ],
-  "author": "Zextify Development",
+  "author": "orlandonetto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zextify/zextify-api-sso/issues"
+    "url": "https://github.com/orlandonetto/auth-api/issues"
   },
-  "homepage": "https://github.com/zextify/zextify-api-sso#readme",
+  "homepage": "https://github.com/orlandonetto/auth-api#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",

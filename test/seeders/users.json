@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "63dfb6ef1bcdbd724f89fcf4",
+    "email": "john.doe@netto.dev",
+    "password": "#Pass123",
+    "firstName": "John",
+    "lastName": "Doe",
+    "emailConfirmed": true,
+    "emailConfirmationCode": null,
+    "emailConfirmationSentDate": null,
+    "recoverPassCode": null,
+    "recoverPassSentDate": null
+  },
+  {
+    "_id": "63ed76df2a896f60a18fb4c1",
+    "email": "jane.dae@netto.dev",
+    "password": "#Pass123",
+    "firstName": "Jane",
+    "lastName": "Dae",
+    "emailConfirmed": false,
+    "emailConfirmationCode": "TCHOU",
+    "emailConfirmationSentDate": null,
+    "recoverPassCode": "DALE",
+    "recoverPassSentDate": null
+  },
+  {
+    "_id": "63f03ba6639f8f5e6056f2c7",
+    "email": "tony.due@netto.dev",
+    "password": "#Pass123",
+    "firstName": "Tony",
+    "lastName": "Due",
+    "emailConfirmed": false,
+    "emailConfirmationCode": "ALOU",
+    "emailConfirmationSentDate": null,
+    "recoverPassCode": null,
+    "recoverPassSentDate": null
+  }
+]
